@@ -31,7 +31,7 @@ const reviews = require('./routes/reviews');
 const app = express();
 
 app.use(
-  cors({ origin: 'http://localhost:3000', credentials: true }),
+  cors({ origin: `${process.env.SITE_ORIGIN}`, credentials: true }),
 );
 
 // Body parser

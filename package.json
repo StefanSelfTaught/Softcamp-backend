@@ -4,11 +4,8 @@
   "description": "An API for coding bootcamps",
   "main": "server.js",
   "scripts": {
-    "server": "SET NODE_ENV=production && node server",
-    "client": "cd react-client && npm start",
-    "start": "nodemon server.js",
-    "build": "cd react-client && npm start",
-    "dev": "concurrently --kill-others-on-fail \"npm run start\" \"npm run client\""
+    "server": "nodemon server.js",
+    "start": "node server.js",
   },
   "author": "Pop Stefan",
   "license": "MIT",
